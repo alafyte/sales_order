@@ -1,0 +1,8 @@
+@hostname=localhost
+@port=4004
+@host={{hostname}}:{{port}}
+GET http://{{host}}/service/salesorderService/SalesOrders
+
+###
+POST http://{{host}}/service/salesorderService/syncOrders
+Content-Type: application/json
