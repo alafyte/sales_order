@@ -13,6 +13,9 @@ target/
 .che/
 .gen/
 
+.env
+env
+
 # MTA
 *_mta_build_tmp
 *.mtar

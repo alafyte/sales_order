@@ -1,0 +1,16 @@
+[
+    {
+      "NotificationTypeKey": "OrderStatusChanged",
+      "NotificationTypeVersion": "1",
+      "Templates": [
+        {
+          "Language": "en",
+          "TemplatePublic": "Order status was changed",
+          "TemplateSensitive": "Order '{{saledOrderId}}' was {{changeEvent}}",
+          "TemplateGrouped": "Order Status Update",
+          "TemplateLanguage": "mustache",
+          "Subtitle": "Order '{{saledOrderId}}' {{changeEvent}} by {{user}}."
+        }
+      ]
+    }
+  ]

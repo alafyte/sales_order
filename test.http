@@ -6,3 +6,12 @@ GET http://{{host}}/service/salesorderService/SalesOrders
 ###
 POST http://{{host}}/service/salesorderService/syncOrders
 Content-Type: application/json
+
+###
+POST http://{{host}}/service/salesorderService/approveOrder
+Content-Type: application/json
+
+{
+    "salesOrderID": "1",
+    "comments": "test comment"
+}

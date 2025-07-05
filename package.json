@@ -37,12 +37,20 @@
       "[production]": {
         "auth": "xsuaa"
       },
+      "[hybrid]": {
+        "auth": "xsuaa"
+      },
+      "[development]": {
+        "auth": "dummy"
+      },
       "db": {
-        "kind": "sqlite",
-        "credentials": {
-          "url": "db.sqlite"
-        },
-        "schema_evolution": "auto"
+        "[development]": {
+          "kind": "sqlite",
+          "credentials": {
+            "url": "db.sqlite"
+          },
+          "schema_evolution": "auto"
+        }
       },
       "destinations": true,
       "html5-runtime": true,
